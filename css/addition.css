@@ -1,0 +1,204 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.lead {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.intro-header {
+	padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 0px;
+	color: #f8f8f8;
+	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background-size: center;
+	text-align: center;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 4em;
+	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.intro-divider {
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-divider-2{
+	width: 400px;
+	border-top: 1px solid #454545;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.intro-message > h3{
+	text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 767px) {
+	.intro-message {
+		padding-bottom: 15%;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 35%;
+	}
+
+	.intro-divider-2{
+		width:35%;
+	}
+}
+
+@media (max-width:480px){
+	.intro-message > h1{
+		font-size: 2.5em;
+	}
+
+	.intro-message h2{
+		font-size:1.5em;
+	}
+}
+.content-section-a {
+	background-color: #2B2B2B;
+	padding: 50px 0;
+}
+
+.content-section-b {
+	background-color:#363636;
+	padding: 50px 0;
+}
+
+.section-heading {
+	margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+
+.banner {
+	padding: 100px 0;
+	color: #f8f8f8;
+	background: url(../img/banner-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.banner h2 {
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	font-size: 3em;
+}
+
+.banner ul {
+	margin-bottom: 0;
+}
+
+.banner-social-buttons {
+	float: right;
+	margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+	ul.banner-social-buttons {
+		float: left;
+		margin-top: 15px;
+	}	
+}
+
+@media (max-width: 767px) {
+	.banner h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+		font-size: 3em;
+	}
+
+	ul.banner-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.banner-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}	
+}
+
+footer {
+	background-color: #0f0f0f;
+	padding: 50px 0;
+}
+
+
+/*a{
+  color: #A3A3A3; maybe blue?
+}
+
+a:hover{
+	color: #; same color as text
+	-webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+} */
+
+.img-circle:hover {
+  opacity: .5;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+  filter:alpha(opacity=50);
+}
+
+.img-hover:hover{
+  opacity: .5;
+  -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+  filter:alpha(opacity=50);
+}
+
+p, h3{
+	color:#A3A3A3;
+}
+
+h2{
+	letter-spacing:3px;
+	color:#A3A3A3;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.center-row {
+	display:table;
+}
+.center {
+	display:table-cell;
+    vertical-align:middle;
+    float:none;
+}
