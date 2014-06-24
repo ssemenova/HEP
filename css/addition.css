@@ -1,6 +1,7 @@
 body, html {
 	height: 100%;
 	width: 100%;
+	background-color:#0f0f0f;
 }
 
 body, h3, h4, h5, h6 {
@@ -118,7 +119,7 @@ body, h2{
 	}
 
 	.intro-message h2{
-		font-size:1.5em;
+		font-size:1em;
 	}
 
 	.section-heading{
@@ -128,6 +129,10 @@ body, h2{
 	.intro-divider-2{
 		margin:0 auto;
 		width:35%;
+	}
+
+	.staff{
+		font-size:1.25em;
 	}
 }
 .content-section-a {
@@ -192,6 +197,10 @@ body, h2{
 	.intro-header{
 		padding-top:50px;
 	}
+
+	h3{
+		font-size:2em;
+	}
 }
 @media (max-width: 1199px) {
 	ul.banner-social-buttons {
@@ -226,21 +235,14 @@ body, h2{
 	}
 }
 
-/*a{
-  color: #A3A3A3; maybe blue?
+a{
+  color: #656464; maybe blue?
 }
 
 a:hover{
-	color: #; same color as text
+	color: #A3A3A3;
 	-webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
-} */
-
-.img-circle:hover {
-  opacity: .5;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
-  filter:alpha(opacity=50);
 }
 
 .img-hover:hover{
@@ -273,3 +275,30 @@ footer {
 	background-color: #0f0f0f;
 	padding: 20px 0;
 }
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+
+
